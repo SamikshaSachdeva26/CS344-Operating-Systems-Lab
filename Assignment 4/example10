@@ -1,0 +1,9 @@
+*Example 10: Compression Feature File system testing
+compratio=10
+fsd=fsd1,anchor=/group17,depth=1,width=1,files=7,size=500m
+
+fwd=fwd1,fsd=fsd1,operation=read,xfersize=4k,fileio=sequential,fileselect=random,threads=2
+
+rd=rd1,fwd=fwd1,fwdrate=100,format=yes,elapsed=30,interval=1
+
+
